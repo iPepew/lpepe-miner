@@ -1,37 +1,33 @@
-# LPEPE Miner for Clore.ai
+lpepe-miner
 
+🚀 Precompiled ccminer build optimized for LPEPE mining on NVIDIA GPUs.
 
-Precompiled ccminer for mining LPEPE.
+This repository provides a simple and fast way to start mining LPEPE using a prebuilt miner package.
 
 Quick Start
-1. Скачать архив
+1. Download miner
 wget -O lpepe.tar.gz https://raw.githubusercontent.com/iPepew/lpepe-miner/main/lpepe-miner.tar.gz
-2. Если возникает ошибка с библиотекой
+2. Install dependency (if needed)
 
-На некоторых системах может отсутствовать libssl1.1. Установите её:
+Some systems may require OpenSSL 1.1:
 
 apt update && apt install libssl1.1 -y
-3. Распаковать архив
+3. Extract archive
 tar -xzf lpepe.tar.gz
 cd lpepe-miner
-4. Запустить майнинг
+4. Start mining
+./start.sh YOUR_WALLET.WORKER
+
+Example:
+
 ./start.sh lpep1qrj94ws0em8jy4hhekcpuglpnrc87fugfq95qj2.1pepe
 
-Где:
+Where:
 
-lpep1qrj94ws0em8jy4hhekcpuglpnrc87fugfq95qj2 — ваш LPEPE кошелек
+Parameter	Description
+WALLET	Your LPEPE wallet address
+WORKER	Worker name (any name)
 
-.1pepe — имя воркера
-
-
-# ⚠️ Disclaimer
-
-This repository is provided for educational and mining purposes only.
-Always verify wallet addresses and mining pools before use.
-
-Mining profitability depends on hardware performance, electricity costs and market conditions.
-
----
 
 # 🐸 PepePow — Meme Token Community
 
