@@ -1,109 +1,28 @@
 # LPEPE Miner for Clore.ai
 
-Ready-to-use **ccminer (Fork KlausT)** build for mining **LuckyPepe (yescryptr32)** on NVIDIA GPUs such as RTX 3080 Ti and others.
-Designed for quick deployment on rented rigs (for example on Clore.ai).
 
----
+Precompiled ccminer for mining LPEPE.
 
-# 🚀 Quick Start (One Command)
+Quick Start
+1. Скачать архив
+wget -O lpepe.tar.gz https://raw.githubusercontent.com/iPepew/lpepe-miner/main/lpepe-miner.tar.gz
+2. Если возникает ошибка с библиотекой
 
-```bash
-wget -O lpepe.tar.gz https://github.com/ТВОЙ_ЛОГИН/lpepe-miner/releases/download/v1.0/lpepe-miner.tar.gz && tar -xzf lpepe.tar.gz && cd lpepe-miner && ./start.sh YOUR_WALLET.rig1
-```
+На некоторых системах может отсутствовать libssl1.1. Установите её:
 
-Replace:
-
-```
-YOUR_WALLET.rig1
-```
-
-with your wallet address and worker name.
-
-Example:
-
-```bash
-./start.sh lpep1xxxxxxxxxxxxxxxxxxxxxxxxxxxx.rig1
-```
-
----
-
-# ⚙️ Detailed Setup (Step-by-step)
-
-### 1. Download the archive
-
-```bash
-wget -O lpepe.tar.gz https://github.com/ТВОЙ_ЛОГИН/lpepe-miner/releases/download/v1.0/lpepe-miner.tar.gz
-```
-
-### 2. Extract the archive
-
-```bash
+apt update && apt install libssl1.1 -y
+3. Распаковать архив
 tar -xzf lpepe.tar.gz
 cd lpepe-miner
-```
-
-### 3. Start mining
-
-```bash
+4. Запустить майнинг
 ./start.sh lpep1qrj94ws0em8jy4hhekcpuglpnrc87fugfq95qj2.1pepe
-```
 
----
+Где:
 
-# 📦 What is included
+lpep1qrj94ws0em8jy4hhekcpuglpnrc87fugfq95qj2 — ваш LPEPE кошелек
 
-* Precompiled **ccminer-klaust-yescrypt**
-* Support for **yescryptr32 algorithm**
-* Simple start script
-* Optimized for GPU rigs and cloud mining
+.1pepe — имя воркера
 
-Supported GPUs:
-
-* RTX 2060 / 2070 / 2080
-* RTX 3060 / 3070 / 3080 / 3090
-
----
-
-# 🇷🇺 Русская версия
-
-## LPEPE Miner для Clore.ai
-
-Готовая сборка **ccminer (Fork KlausT)** для майнинга **LuckyPepe (алгоритм yescryptr32)** на видеокартах NVIDIA.
-
-Подходит для быстрого запуска на арендованных GPU-ригах (например на Clore.ai).
-
----
-
-## 🚀 Быстрый запуск одной командой
-
-```bash
-wget -O lpepe.tar.gz https://github.com/ТВОЙ_ЛОГИН/lpepe-miner/releases/download/v1.0/lpepe-miner.tar.gz && tar -xzf lpepe.tar.gz && cd lpepe-miner && ./start.sh ВАШ_КОШЕЛЕК.rig1
-```
-
----
-
-## ⚙️ Подробный запуск
-
-### 1. Скачать архив
-
-```bash
-wget -O lpepe.tar.gz https://github.com/ТВОЙ_ЛОГИН/lpepe-miner/releases/download/v1.0/lpepe-miner.tar.gz
-```
-
-### 2. Распаковать архив
-
-```bash
-tar -xzf lpepe.tar.gz
-cd lpepe-miner
-```
-
-### 3. Запустить майнинг
-
-```bash
-./start.sh lpep1qrj94ws0em8jy4hhekcpuglpnrc87fugfq95qj2.1pepe
-```
-
----
 
 # ⚠️ Disclaimer
 
