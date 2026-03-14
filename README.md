@@ -6,6 +6,16 @@ This repository provides a simple and fast way to start mining **LPEPE** using a
 
 ---
 
+## 🇷🇺 Русская версия
+
+# lpepe-miner
+
+🚀 Готовая сборка **ccminer**, оптимизированная для **майнинга LPEPE** на видеокартах NVIDIA.
+
+Этот репозиторий предоставляет простой и быстрый способ начать майнинг **LPEPE** с использованием готового пакета майнера.
+
+---
+
 ## Features
 
 - ⚡ Optimized **ccminer build**
@@ -15,143 +25,6 @@ This repository provides a simple and fast way to start mining **LPEPE** using a
 - 📦 Precompiled binary (no build required)
 
 ---
-
-## System Requirements
-
-- Linux (Ubuntu / Debian / HiveOS recommended)
-- NVIDIA GPU with CUDA support
-- Installed dependencies:
-  - `libssl1.1`
-  - `wget`
-  - `tar`
-
----
-
-## Quick Start
-
-### 1. Download miner
-
-```bash
-wget -O lpepe.tar.gz https://raw.githubusercontent.com/iPepew/lpepe-miner/main/lpepe-miner.tar.gz
-```
-
----
-
-### 2. Install dependency (if needed)
-
-Some systems may require **OpenSSL 1.1**:
-
-```bash
-apt update && apt install libssl1.1 -y
-```
-
----
-
-### 3. Extract archive
-
-```bash
-tar -xzf lpepe.tar.gz
-cd lpepe-miner
-```
-
----
-
-### 4. Start mining
-
-```bash
-./start.sh YOUR_WALLET.WORKER
-```
-
-Example:
-
-```bash
-./start.sh lpep1qrj94ws0em8jy4hhekcpuglpnrc87fugfq95qj2.1pepe
-```
-
-Where:
-
-| Parameter | Description |
-|-----------|-------------|
-| WALLET | Your LPEPE wallet address |
-| WORKER | Worker name (any name) |
-
----
-
-## Example HiveOS installation
-
-Run the following commands inside your HiveOS worker:
-
-```bash
-wget -O lpepe.tar.gz https://raw.githubusercontent.com/iPepew/lpepe-miner/main/lpepe-miner.tar.gz
-tar -xzf lpepe.tar.gz
-cd lpepe-miner
-./start.sh YOUR_WALLET.WORKER
-```
-
----
-
-## File Structure
-
-```
-lpepe-miner/
-│
-├── start.sh        # miner start script
-├── ccminer         # compiled miner binary
-└── README.md       # documentation
-```
-
----
-
-## Troubleshooting
-
-### Missing library error
-
-If you see an error like:
-
-```
-libssl.so.1.1: cannot open shared object file
-```
-
-Run:
-
-```bash
-apt update && apt install libssl1.1 -y
-```
-
----
-
-### Permission denied
-
-Make the script executable:
-
-```bash
-chmod +x start.sh
-```
-
----
-
-## Security Notice
-
-Always review scripts before running them on your system.
-
----
-
-## Disclaimer
-
-This project is provided **for educational and experimental purposes**.  
-Use at your own risk.
-
----
-
-## Contributing
-
-Pull requests and suggestions are welcome.
-
----
-
-## License
-
-MIT License
 
 # 🐸 PepePow — Meme Token Community
 
